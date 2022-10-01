@@ -173,6 +173,20 @@ img {
 
 .hero {
   background-color: var(--background-color-hero-footer);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bck-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -225,6 +239,34 @@ img {
   width: 270px;
 }
 
+.benefits .item::before {
+  display: block;
+  content: "";
+
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  background-color: var(--bg-btn-color);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .benefits .item + .item {
   margin-left: 30px;
 }
@@ -233,6 +275,7 @@ img {
   color: var(--title-text-color);
 
   margin-bottom: 10px;
+  margin-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
