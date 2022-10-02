@@ -149,6 +149,10 @@ img {
   margin-left: auto;
 }
 
+.contact-icon {
+  margin-right: 10px;
+}
+
 .contact .item + .item {
   margin-left: 50px;
 }
@@ -235,36 +239,15 @@ img {
   display: flex;
 }
 
+.icon-benefits {
+  background-color: var(--bg-btn-color);
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+}
+
 .benefits .item {
   width: 270px;
-}
-
-.benefits .item::before {
-  display: block;
-  content: "";
-
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 120px;
-  background-color: var(--bg-btn-color);
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
 }
 
 .benefits .item + .item {
