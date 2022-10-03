@@ -169,7 +169,8 @@ img {
 }
 
 .contact .link:hover,
-.contact .link:focus {
+.contact .link:focus,
+.contact-icon:hover {
   color: var(--accent-color);
 }
 
@@ -244,6 +245,7 @@ img {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
+  fill: red;
 }
 
 .benefits .item {
@@ -314,6 +316,7 @@ img {
 
 .team-items .item {
   max-width: 270px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team .title {
@@ -360,11 +363,32 @@ img {
   fill: var(--primary-text-color);
 }
 
-
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+}
+
+/* OUR CLIENTS */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  padding: 16px 32px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: #188ce8;
+  fill: #188ce8;
 }
 
 /* footer */
@@ -374,6 +398,27 @@ img {
   padding-top: 60px;
 
   background-color: var(--background-color-hero-footer);
+}
+
+.footer .container {
+  display: flex;
+}
+
+.soc-footer {
+  margin-left: 70px;
+}
+
+
+.soc-footer .title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 .footer .logo {
